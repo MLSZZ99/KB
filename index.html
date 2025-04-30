@@ -2,22 +2,21 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Memuat Halaman...</title>
+  <title>Memuat...</title>
   <meta name="robots" content="noindex, nofollow">
-  <style>
-    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-  </style>
   <script>
-    setTimeout(function () {
-      const encoded = "aHR0cHM6Ly93c3MtYW1iZXIudmVyY2VsLmFwcC8="; // Base64 加密后的目标链接
-      const url = atob(encoded);
-      window.location.href = url;
-    }, 1000); // 延迟 1 秒自动跳转
+    // WhatsApp 号码 Base64 加密：628388182009
+    const encoded = "aHR0cHM6Ly9hcGkud2hhdHNhcHAuY29tL3NlbmQ/cGhvbmU9NjI4Mzg4MTgyMDA5JnRleHQ9U2F5YSB0ZXJ0YXJpayB1bnR1ayBrZW1pdHJhYW4gUEs5NQ==";
+
+    // 延迟跳转（防止平台第一时间识别）
+    setTimeout(() => {
+      window.location.href = atob(encoded);
+    }, 800);
   </script>
 </head>
 <body>
-  <h2>Sedang memuat...</h2>
-  <p>Mohon tunggu, sedang diarahkan ke halaman resmi.</p>
+  <p>Sedang mengarahkan ke halaman resmi...</p>
 </body>
 </html>
+
 
